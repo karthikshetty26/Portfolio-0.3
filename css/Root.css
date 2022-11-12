@@ -1,0 +1,36 @@
+@import url('https://fonts.googleapis.com/css2?family=Niconne&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,600;0,700;1,200;1,300;1,400;1,600&display=swap');
+
+*, *::after, *::before{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+::selection {
+   background: var(--color-mid);
+}
+
+.Cream-Puff-Lace-1-hex { color: #3EB595; }
+.Cream-Puff-Lace-2-hex { color: #FFF447; }
+.Cream-Puff-Lace-3-hex { color: #C9C9C9; }
+.Cream-Puff-Lace-4-hex { color: #696969; }
+.Cream-Puff-Lace-5-hex { color: #1A1A1A; }
+
+:root {
+    --color-temp: #a86464;
+
+    --color-mid: #3EB595;
+
+    --color-black: #000000;
+
+    --color-bg-one: #1A1A1A;
+    --color-bg-two: #303030;
+
+    --color-text-one: #C9C9C9;
+    --color-text-two: #FFF447;
+
+    --fs-normal-slant-primary: 'Nunito', sans-serif;
+    --fs-slant-handwriting: 'Niconne', sans-serif;
+}

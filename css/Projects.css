@@ -1,0 +1,126 @@
+body {
+    width: 100%;
+    height: 100vh;
+    font-family: var(--fs-normal-slant-primary);
+    background-image: linear-gradient(to bottom right, #1A1A1A, #696969) ;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.project_start{
+    width: 100%;
+    padding: 10% 0;
+}
+
+.project_content{
+    width: min(1500px, 98%);
+    padding: 0 10px;
+    margin: auto;
+    color: var(--color-text-one);
+}
+
+.project_content h3{
+    font-size: clamp(2rem, 8vw, 3rem);
+    padding: 10px 0;
+    letter-spacing: 0.5px;
+    transition: all 0.5s ease;
+}
+
+.project_content p{
+    font-size: clamp(0.8rem, 4.5vw, 1.1rem);
+    letter-spacing: 0.5px;
+    transition: all 0.5s ease;
+}
+
+.pro_cover{
+    width: 100%;
+    padding: 8.5vh 0;
+}
+
+.pro_one{
+    background-image: linear-gradient(#595046, #1A1A1A) ;
+}
+
+.pro_two{
+    background-image: linear-gradient(#8C5E4D, #1A1A1A) ;
+}
+
+.pro_three{
+    background-image: linear-gradient(#465E73, #1A1A1A) ;
+}
+
+.pro_four{
+    background-image: linear-gradient(#0D0000, #1A1A1A) ;
+}
+
+.pro{
+    display: flex;
+    width: min(1500px, 98%);
+    padding: 0 10px;
+    margin: auto;
+    color: var(--color-text-one);
+}
+
+.pro_content{
+    width: 60%;
+    padding: 2% 0;
+}
+
+.pro_content h5{
+    width: 100%;
+    padding: 10px 0;
+    letter-spacing: 0.5px;
+    font-size: clamp(1rem, 6vw, 1.8rem);
+}
+
+.pro_content p{
+    width: 100%;
+    letter-spacing: 0.5px;
+    font-size: clamp(0.8rem, 4.5vw, 1.1rem);
+}
+
+.pro_link{
+    padding: 8px 0;
+    color: var(--color-text-two);
+}
+
+.pro_img{
+    width: 40%;
+}
+
+.pro_img img{
+    width: 100%;
+}
+
+@media (max-width: 890px) {
+
+    .project_start{
+        padding: 20% 0;
+    }
+
+    .pro{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .pro_content{
+        width: 100%;
+    }
+
+    .pro_img{
+        width: 100%;
+        margin-top: 40px;
+        text-align: center;
+    }
+
+    .pro_img img{
+        width: min(600px, 100%);
+    }
+}
+
+@media (max-width: 400px) {
+
+    .project_start{
+        padding: 30% 0;
+    }
+}

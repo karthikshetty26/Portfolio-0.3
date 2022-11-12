@@ -1,0 +1,125 @@
+.pre_loader_div {
+    background: rgb(0, 0, 0) url(../picture/preloader-2.gif) no-repeat center;
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    z-index: 1000;
+}
+
+.navbar {
+    position: fixed;
+    width: 100%;
+    padding: 20px 0;
+    font-family: var(--fs-normal-slant-primary);
+    font-weight: 400;
+    letter-spacing: 2px;
+    transition: all 0.3s ease;
+}
+
+.navbar.add {
+    background-color: var(--color-bg-two);
+    padding: 10px 0;
+}
+
+.navbar_div {
+    position: relative;
+    width: min(1500px, 98%);
+    padding: 0 10px;
+    margin: auto;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    color: var(--color-text-one);
+    font-size: clamp(1.5rem, 9vw, 2rem);
+    z-index: 999;
+    transition: all 0.5s ease;
+}
+
+.navbar.add .navbar_div .logo{
+    font-size: clamp(1.5rem, 9vw, 1.8rem);
+}
+
+.nav_content li{
+    list-style: none;
+    display: inline-block;
+    margin-left: 20px;
+}
+
+.nav_content li a{
+    font-size: 1.5rem;
+    color: var(--color-text-one);
+    transition: all 0.5s ease;
+}
+
+.navbar.add .nav_content li a{
+    font-size: 1.3rem;
+}
+
+.nav_content li a:hover{
+    font-size: 1.6rem;
+    color: var(--color-text-two);
+}
+
+.navbar.add .nav_content li a:hover{
+    font-size: 1.4rem;
+}
+
+.nav_btn {
+    display: none;
+}
+
+.nav_btn i{
+    color: var(--color-text-one);
+    font-size: 1.5rem;
+}
+
+
+
+@media (max-width:930px){
+
+    .navbar_div {
+        padding: 0 2%;
+    }
+
+    .nav_content {
+        display: flex;
+        flex-direction: column;
+        position: fixed;
+
+        width: 100%;
+        height: 100vh;
+        padding:30px 0 0 0;
+        left: -100%;
+        top: 0;
+
+        background-color: var(--color-black);
+
+        align-items: center;
+        justify-content: center;
+        z-index: 998;
+        transition: all 0.3s ease;
+    }
+
+    .nav_content.active {
+        left: 0;
+    }
+
+    .nav_content li{
+        margin: 10px;
+        font-size: 1.8rem;
+        text-align: center;
+    }
+
+    .nav_btn {
+        display: block;
+        z-index: 999;
+    }
+
+    .nav_btn i.active:before{
+        content: "\f818";
+    }
+}
